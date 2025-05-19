@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	// fmt.Println("hellow world")
 
-//variable and data type
+	//variable and data type
 
 	/*var x int = 10
 	fmt.Println(x)*/
@@ -21,7 +21,7 @@ func main() {
 	// fmt.Println(a, b, c, d)
 	// fmt.Println(p)
 
-//Condition if else & switch case
+	//Condition if else & switch case
 
 	// age := 18
 
@@ -62,6 +62,57 @@ func main() {
 	// 	fmt.Println("age is either 1 nor 2 or 3")
 	// }
 
-// function
+	// function
+	//response := add(10, 30)
+	//
+	//fmt.Println(response)
+	//
+	//response2, response3 := getNumbers(20, 15)
+	//fmt.Println(response2)
+	//fmt.Println(response3)
+	//printSomeThink()
+	//sayHello("faruk")
+	welcomeMessage()
 
+	var number1, number2 int
+
+	fmt.Print("Enter your 1st number: ")
+	fmt.Scanln(&number1)
+	fmt.Print("Enter your 2nd number: ")
+	fmt.Scanln(&number2)
+
+	sum := number1 + number2
+	fmt.Println("hello", name)
+	fmt.Println("Sum is: ", sum)
+	fmt.Println("thank your for using the application")
+	fmt.Println("GoodBye")
 }
+
+func welcomeMessage() {
+	fmt.Println("Welcome to the Application")
+}
+func inputName() {
+	var name string
+	fmt.Print("Enter your name: ")
+	fmt.Scanln(&name)
+}
+
+//
+//func add(number1 int, number2 int) int {
+//	sum := number1 + number2
+//	return sum
+//}
+//
+//func getNumbers(number1 int, number2 int) (int, int) {
+//	sum := number1 + number2
+//	mul := number1 * number2
+//	return sum, mul
+//}
+//
+//func printSomeThink() {
+//	fmt.Println("Education golang")
+//}
+//
+//func sayHello(name string) {
+//	fmt.Println("Hello " + name)
+//}
