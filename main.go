@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+var (
+	a = 10
+	b = 20
+)
+
+func add(x int, y int) {
+	z := x + y
+	fmt.Println(z)
+}
+
 func main() {
 	// fmt.Println("hellow world")
 
@@ -94,49 +104,62 @@ func main() {
 	//fmt.Println("GoodBye")
 
 	//functional application
-	welcomeMessage()
-	name := inputName()
-	number1, number2 := inputNumber()
-	sum := sum(number1, number2)
-	display(name, sum)
-	goodByMessage()
+	//welcomeMessage()
+	//name := inputName()
+	//number1, number2 := inputNumber()
+	//sum := sum(number1, number2)
+	//display(name, sum)
+	//goodByMessage()
+
+	p := 30
+	q := 40
+
+	add(p, q)
+
+	add(a, b)
+
+	add(a, p)
+
+	add(b, p)
+
+	//add(a, z)
 }
 
-func welcomeMessage() {
-	fmt.Println("Welcome to the Application")
-}
-
-func inputName() string {
-	var name string
-	fmt.Println("Enter your name: ")
-	fmt.Scanln(&name)
-	return name
-}
-
-func inputNumber() (int, int) {
-	var number1, number2 int
-
-	fmt.Print("Enter your 1st number: ")
-	fmt.Scanln(&number1)
-	fmt.Print("Enter your 2nd number: ")
-	fmt.Scanln(&number2)
-	return number1, number2
-}
-
-func sum(a, b int) int {
-	sum := a + b
-	return sum
-}
-
-func display(name string, sum int) {
-	fmt.Println("hello", name)
-	fmt.Println("Sum is: ", sum)
-}
-
-func goodByMessage() {
-	fmt.Println("thank your for using the application")
-	fmt.Println("GoodBye")
-}
+//func welcomeMessage() {
+//	fmt.Println("Welcome to the Application")
+//}
+//
+//func inputName() string {
+//	var name string
+//	fmt.Println("Enter your name: ")
+//	fmt.Scanln(&name)
+//	return name
+//}
+//
+//func inputNumber() (int, int) {
+//	var number1, number2 int
+//
+//	fmt.Print("Enter your 1st number: ")
+//	fmt.Scanln(&number1)
+//	fmt.Print("Enter your 2nd number: ")
+//	fmt.Scanln(&number2)
+//	return number1, number2
+//}
+//
+//func sum(a, b int) int {
+//	sum := a + b
+//	return sum
+//}
+//
+//func display(name string, sum int) {
+//	fmt.Println("hello", name)
+//	fmt.Println("Sum is: ", sum)
+//}
+//
+//func goodByMessage() {
+//	fmt.Println("thank your for using the application")
+//	fmt.Println("GoodBye")
+//}
 
 //
 //func add(number1 int, number2 int) int {
