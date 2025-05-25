@@ -1,16 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"example.com/mathlib"
+)
 
 var (
 	a = 10
 	b = 20
 )
 
-func add(x int, y int) {
-	z := x + y
-	fmt.Println(z)
-}
+//func add(x int, y int) {
+//	z := x + y
+//	fmt.Println(z)
+//}
 
 func main() {
 	// fmt.Println("hellow world")
@@ -111,18 +113,33 @@ func main() {
 	//display(name, sum)
 	//goodByMessage()
 
-	p := 30
-	q := 40
-
-	add(p, q)
-
-	add(a, b)
-
-	add(a, p)
-
-	add(b, p)
+	//p := 30
+	//q := 40
+	//
+	//add(p, q)
+	//
+	//add(a, b)
+	//
+	//add(a, p)
+	//
+	//add(b, p)
 
 	//add(a, z)
+
+	// local scope done
+	//x := 10
+	//
+	//if x >= 10 {
+	//	//block scope
+	//	m := 5
+	//	fmt.Println("i have", m, "fruits")
+	//}
+	//
+	//fmt.Println("i have", x, "fruits")
+	//fmt.Println("i have", a, "fruits")
+	//fmt.Println("i have", b, "fruits")
+	add(7, 4)
+	mathlib.Add(5, 6)
 }
 
 //func welcomeMessage() {
