@@ -1,9 +1,5 @@
 package main
 
-import (
-	"example.com/mathlib"
-)
-
 var (
 	a = 10
 	b = 20
@@ -138,8 +134,17 @@ func main() {
 	//fmt.Println("i have", x, "fruits")
 	//fmt.Println("i have", a, "fruits")
 	//fmt.Println("i have", b, "fruits")
-	add(7, 4)
-	mathlib.Add(5, 6)
+	//add(7, 4)
+	//mathlib.Add(5, 6)
+	//variable shadoing
+	//age := 30
+	//
+	//if age > 20 {
+	//	a := 40
+	//	fmt.Println(a)
+	//}
+	//
+	//fmt.Println(a)
 }
 
 //func welcomeMessage() {
