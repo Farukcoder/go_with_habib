@@ -8,8 +8,13 @@ import "fmt"
 //	fmt.Println(x + y)
 //}
 
-var adder = func(x, y int) {
-	fmt.Println(x + y)
+//var adder = func(x, y int) {
+//	fmt.Println(x + y)
+//}
+
+func add(a int, b int) {
+	c := a + b
+	fmt.Println(c)
 }
 
 func main() {
@@ -31,12 +36,15 @@ func main() {
 	//function expression not call up of course call down
 	//add(2, 5)
 
-	add := func(a, b int) {
-		fmt.Println(a + b)
-	}
+	//add := func(a, b int) {
+	//	fmt.Println(a + b)
+	//}
+	//
+	//add(1, 2)
+	//adder(4, 5)
 
-	add(1, 2)
-	adder(4, 5)
+	//parameter vs argument
+	add(2, 5)
 }
 
 //func init() {
