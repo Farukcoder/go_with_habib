@@ -12,9 +12,18 @@ import "fmt"
 //	fmt.Println(x + y)
 //}
 
-func add(a int, b int) {
+// higher order function
+func processOrder(x int, y int, op func(p int, q int)) {
+	op(x, y)
+}
+
+func add(a int, b int) { //parameter
 	c := a + b
 	fmt.Println(c)
+}
+
+func call() func(int, int) {
+	return add
 }
 
 func main() {
@@ -44,7 +53,18 @@ func main() {
 	//adder(4, 5)
 
 	//parameter vs argument
-	add(2, 5)
+	//add(2, 5) //argument
+
+	//first order function
+
+	//higher order function
+	processOrder(10, 20, add) //passing function as argument
+	sum := call()             // function expression
+	sum(20, 20)
+
+	//first class citizens (variable assign data)
+	//call back function
+
 }
 
 //func init() {
