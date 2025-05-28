@@ -17,13 +17,13 @@ func processOrder(x int, y int, op func(p int, q int)) {
 	op(x, y)
 }
 
-func add(a int, b int) { //parameter
+func Add(a int, b int) { //parameter
 	c := a + b
 	fmt.Println(c)
 }
 
 func call() func(int, int) {
-	return add
+	return Add
 }
 
 func main() {
@@ -58,7 +58,7 @@ func main() {
 	//first order function
 
 	//higher order function
-	processOrder(10, 20, add) //passing function as argument
+	processOrder(10, 20, Add) //passing function as argument
 	sum := call()             // function expression
 	sum(20, 20)
 
