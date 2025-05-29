@@ -2,12 +2,24 @@ package main
 
 import "fmt"
 
-var a = 10
+const e = 10
 
-func Adder(x int, y int) {
-	z := x + y
-	fmt.Println(z)
+var p = 100
+
+func calls() {
+	Adds := func(x, y int) {
+		z := x + y
+		fmt.Println(z)
+	}
+
+	Adds(10, 50)
+	Adds(e, 100)
 }
+
+//func Adder(x int, y int) {
+//	z := x + y
+//	fmt.Println(z)
+//}
 
 func main() {
 
@@ -15,9 +27,11 @@ func main() {
 	// data segment -> all variable are go to data segment
 	// stack -> all function call are go to stack segment allocate stake frame
 	// heap
-	Adder(5, 2)
-	Adder(a, 20)
+	//Adder(5, 2)
+	//Adder(aa, 20)
 
+	calls()
+	fmt.Println(p)
 }
 
 func init() {
